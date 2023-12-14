@@ -1,5 +1,8 @@
 import './App.css'
 import Card from './components/Card'
+import Counter from './components/Counter'
+import Form from './components/Form'
+
 
 function App() {
 const Costs = [
@@ -9,6 +12,8 @@ const Costs = [
 ]
   return (
    <div>
+     {/* <Counter/> */}
+     <Form/>
     {
      Costs.map(item => {
        return <Card key={item.id}  data={item} />
